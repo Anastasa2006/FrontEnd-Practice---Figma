@@ -1,0 +1,50 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    background-image: url("Background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #2F1893;
+}
+
+/* я не знаю, как сделать цвет background-а (точнее цветную полоску, возникающую из-за неподходящего размера картинки) незаметным в документе qwq */
+
+.text {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    margin-top: 12%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+    button:first-child {                /* пиксели трогать не стала, чтобы не ломать кнопки :) */
+        background-color: #ea3223;
+        color: white;
+        border-style: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+    }
+
+    button:first-child:hover {          /* при вкладывании ховеров они перестают работать, so я прописала их отдельно */
+        background-color: #AA0423;
+    }
+
+    button:last-child {
+        background-color: #25dac4;
+        color: white;
+        border-style: none;
+        width: 150px;
+        height: 50px;
+        border-radius: 100px;
+    }
+
+    button:last-child:hover {
+        background-color: #19A5B5;
+    }
+}
